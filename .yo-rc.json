@@ -1,0 +1,16 @@
+{
+  "generator-ui5-library": {
+    "libraryname": "SnacktimeLib",
+    "namespace": "p36",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.86.3",
+    "author": "Daniel Kawkab",
+    "newdir": false,
+    "namespaceURI": "p36",
+    "librarynamespace": "p36.SnacktimeLib",
+    "librarynamespaceURI": "p36/SnacktimeLib",
+    "librarybasepath": "../../",
+    "frameworklowercase": "sapui5",
+    "setupCompleted": true
+  }
+}
