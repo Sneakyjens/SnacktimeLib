@@ -1,9 +1,9 @@
 {
   "name": "SnacktimeLib",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "devDependencies": {
-    "@ui5/cli": "^2.9.3",
+    "@ui5/cli": "^2.10.0",
     "karma": "^6.1.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
@@ -17,9 +17,13 @@
   },
   "scripts": {
     "build": "ui5 build --clean-dest",
-    "start": "ui5 serve --open test-resources/p36/SnacktimeLib/Example.html",
+    "start": "ui5 serve --open /resources/p36/SnacktimeLib/component/configurator/index.html",
     "testsuite": "ui5 serve --open test-resources/p36/SnacktimeLib/qunit/testsuite.qunit.html",
     "test": "karma start --browsers=ChromeHeadless --singleRun=true"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "i": "^0.3.6",
+    "npm": "^7.12.0"
+  }
 }

@@ -1,0 +1,39 @@
+{
+  "_version": "1.0.0",
+  "sap.app": {
+    "id": "p36.SnacktimeLib",
+    "type": "library",
+    "embeds": ["component/configurator"],
+    "title": "Snacktime Library",
+    "description": "Library of Snacktime Application",
+    "openSourceComponents": [],
+    "resources": "resources.json",
+    "offline": false
+  },
+
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": { "desktop": true, "tablet": true, "phone": true }
+  },
+
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": { "sap.ui.core": { "minUI5Version": "1.30.0" } }
+    },
+
+    "contentDensities": { "compact": true, "cozy": true }
+  },
+
+  "sap.platform.hcp": { "uri": "" },
+
+  "sap.fiori": { "registrationIds": [], "archeType": "reusecomponent" }
+}

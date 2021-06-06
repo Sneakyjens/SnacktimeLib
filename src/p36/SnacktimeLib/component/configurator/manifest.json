@@ -1,0 +1,90 @@
+{
+  "_version": "1.9.0",
+
+  "sap.app": {
+    "id": "p36.SnacktimeLib.component.configurator",
+    "type": "component",
+    "embeddedBy": "./../../",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{compTitle}}",
+    "description": "{{compDescription}}",
+    "resources": "resources.json",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {}
+  },
+
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {},
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": ["sap_hcb", "sap_belize"]
+  },
+
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "p36.SnacktimeLib.component.configurator.view.Base",
+      "type": "XML",
+      "async": true,
+      "id": "containerApp"
+    },
+    "componentName": "p36.SnacktimeLib.component.configurator",
+    "dependencies": {
+      "minUI5Version": "1.75.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      },
+      "components": {}
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "handleValidation": true,
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "p36.SnacktimeLib.component.configurator.i18n.i18n"
+        }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel"
+      }
+    },
+    "resources": {
+      "css": [],
+      "js": []
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "p36.SnacktimeLib.component.configurator.view",
+        "controlAggregation": "pages",
+        "controlId": "containerApp",
+        "transition": "slide",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "Home",
+          "pattern": "",
+          "target": ["TargetHome"]
+        }
+      ],
+      "targets": {
+        "TargetHome": {
+          "viewType": "XML",
+          "viewName": "Base"
+        }
+      }
+    }
+  }
+}
